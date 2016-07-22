@@ -469,4 +469,22 @@ public class SingleLinkedList {
 			System.out.println(x + "not present in list");
 		}
 	}
+	public void concatenate(SingleLinkedList list){
+		if(start == null ){
+			// if first list is empty
+			start = list.start;
+		}
+		if(list.start== null){
+			// if second list is null
+			// nothing to concatenate
+			return;	
+		}
+		
+		Node p = start;
+		while(p.link!=null){
+			p=p.link;
+		}
+		//p.link refers to last node of first list
+		p.link=list.start;
+	}
 }
