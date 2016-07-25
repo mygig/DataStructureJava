@@ -12,7 +12,7 @@ public class SingleLinkedList {
 		start = null;
 	}
 
-	public void dislplayList() {
+	public void displayList() {
 		Node p;
 		if (start == null) {
 			System.out.println("List is empty");

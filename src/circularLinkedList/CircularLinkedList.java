@@ -157,5 +157,22 @@ public class CircularLinkedList {
 			}
 		}
 	}
-	
+	public void concatenate(CircularLinkedList list){
+		
+		if(last==null){
+			// first list is empty
+			last=list.last;
+			return;
+		}
+		if(list.last==null){
+			// if second list is empty
+			return;
+		}
+		// keep track of the first node of first list
+		Node p = last.link;
+		last.link=list.last.link;
+		list.last.link=p;
+		last=list.last;
+		
+	}
 }

@@ -14,34 +14,34 @@ public class MergingDemo {
 		list2.bubbleSortExData();
 
 		System.out.println("First list");
-		list1.dislplayList();
+		list1.displayList();
 
 		System.out.println("Second list");
-		list2.dislplayList();
+		list2.displayList();
 
 		SingleLinkedList list3;
 		list3 = list1.merge1(list2);
 		System.out.println("Merged List");
-		list3.dislplayList();
+		list3.displayList();
 
 //		// original list will not change
 //		System.out.println("First list");
-//		list1.dislplayList();
+//		list1.displayList();
 //
 //		System.out.println("Second list");
-//		list2.dislplayList();
+//		list2.displayList();
 //
 //		list3 = list1.merge2(list2);
 //		System.out.println("Merged list");
-//		list3.dislplayList();
+//		list3.displayList();
 //
 //		// original list will change
 //
 //		System.out.println("First list");
-//		list1.dislplayList();
+//		list1.displayList();
 //
 //		System.out.println("Second list");
-//		list2.dislplayList();
+//		list2.displayList();
 
 	}
 

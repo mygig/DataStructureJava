@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Demo {
 	public static void main(String args[]) {
-		int choice, data, k, x;
+		int choice, data, x;
 
 		Scanner scan = new Scanner(System.in);
 		SingleLinkedList list = new SingleLinkedList();
@@ -38,7 +38,7 @@ public class Demo {
 
 			switch (choice) {
 			case 1:
-				list.dislplayList();
+				list.displayList();
 				break;
 			case 2:
 				list.countNodes();
@@ -123,7 +123,7 @@ public class Demo {
 			}
 			
 		}
-
+		scan.close();
 	}
 
 }
