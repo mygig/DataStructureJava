@@ -487,4 +487,17 @@ public class SingleLinkedList {
 		//p.link refers to last node of first list
 		p.link=list.start;
 	}
+	
+	public int findMiddleInOnePass(SingleLinkedList list){
+		  Node slow = start;
+		  Node fast = start;
+		  
+		  while(fast!=null && fast.link!=null){
+			  slow = slow.link;
+			  fast=fast.link.link;
+			  
+		  }
+		  return slow.info;
+		
+	}
 }
